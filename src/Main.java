@@ -42,7 +42,7 @@ public class Main {
         System.out.println("--------Search was founded 1950");
         clubs.forEach(club -> System.out.println(wasFounded.search(club)));
 
-        clubs.forEach(club -> System.out.println(ligue.search(club) && club1.search(club) && wasFounded.search(club)));
+        //clubs.forEach(club -> System.out.println(ligue.search(club) && club1.search(club) && wasFounded.search(club)));
 
     }
 
