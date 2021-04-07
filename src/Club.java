@@ -1,48 +1,12 @@
+import java.util.List;
+
 public class Club {
 
     private String club;
     private int wasFounded;
     private Country country;
     private Ligue ligue;
-
-    public Club(String club, int wasFounded, Country country, Ligue ligue) {
-        this.club = club;
-        this.wasFounded = wasFounded;
-        this.country = country;
-        this.ligue = ligue;
-    }
-
-    public String getClub() {
-        return club;
-    }
-
-    public void setClub(String club) {
-        this.club = club;
-    }
-
-    public int getWasFounded() {
-        return wasFounded;
-    }
-
-    public void setWasFounded(int wasFounded) {
-        this.wasFounded = wasFounded;
-    }
-
-    public Country getCountry() {
-        return country;
-    }
-
-    public void setCountry(Country country) {
-        this.country = country;
-    }
-
-    public Ligue getLigue() {
-        return ligue;
-    }
-
-    public void setLigue(Ligue ligue) {
-        this.ligue = ligue;
-    }
+    private List<String> coachingStaff;
 
     @Override
     public String toString() {
@@ -51,7 +15,38 @@ public class Club {
                 ", wasFounded=" + wasFounded +
                 ", country=" + country +
                 ", ligue=" + ligue +
+                ", coachingStaff=" + coachingStaff +
                 '}';
     }
+
+    public String getClub() {
+        return club;
+    }
+
+    public int getWasFounded() {
+        return wasFounded;
+    }
+
+    public Country getCountry() {
+        return country;
+    }
+
+    public Ligue getLigue() {
+        return ligue;
+    }
+
+    public List<String> getCoachingStaff() {
+        return coachingStaff;
+    }
+
+    public Club(String club, int wasFounded, Country country, Ligue ligue, List<String> coachingStaff) {
+        this.club = club;
+        this.wasFounded = wasFounded;
+        this.country = country;
+        this.ligue = ligue;
+        this.coachingStaff = coachingStaff;
+    }
 }
+
+
 
