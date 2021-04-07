@@ -6,7 +6,6 @@ public class Club {
     private int wasFounded;
     private Country country;
     private Ligue ligue;
-    private List<String> coachingStaff;
 
     @Override
     public String toString() {
@@ -15,7 +14,6 @@ public class Club {
                 ", wasFounded=" + wasFounded +
                 ", country=" + country +
                 ", ligue=" + ligue +
-                ", coachingStaff=" + coachingStaff +
                 '}';
     }
 
@@ -35,16 +33,11 @@ public class Club {
         return ligue;
     }
 
-    public List<String> getCoachingStaff() {
-        return coachingStaff;
-    }
-
-    public Club(String club, int wasFounded, Country country, Ligue ligue, List<String> coachingStaff) {
+    public Club(String club, int wasFounded, Country country, Ligue ligue) {
         this.club = club;
         this.wasFounded = wasFounded;
         this.country = country;
         this.ligue = ligue;
-        this.coachingStaff = coachingStaff;
     }
 }
 
